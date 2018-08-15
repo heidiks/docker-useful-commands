@@ -1,4 +1,6 @@
 # docker-useful-commands
+* [Cleaning](#cleaning)
+* [Push](#push)
 
 ### Cleaning
 Delete all containers
