@@ -9,3 +9,16 @@ docker rm $(docker ps -a -q)
 ```
 docker rmi $(docker images -q)
 ```
+
+### Push
+Login into a private registry
+```
+docker login PRIVATE_HOST
+```
+
+Tag and push
+```
+docker tag app:latest PRIVATE_HOST/app:latest
+docker push PRIVATE_HOST/app:latest
+```
+
