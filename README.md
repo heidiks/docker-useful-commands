@@ -45,22 +45,22 @@ Tag and push
 #### Init
 Initialize swarm mode
 ```
-docker swarm init
+    $ docker swarm init
 ```
 
 #### Join
 Generete token for other nodes
 ```
-docker swarm join-token [OPTIONS] (worker|manager)
+    $ docker swarm join-token [OPTIONS] (worker|manager)
 ```
 
 #### Leave
 ```
-docker swarm leave
+    $ docker swarm leave
 ```
 
 #### Stack deploy
 ```
-docker stack deploy --compose-file=docker-compose.yml STACK_NAME
+    $ docker stack deploy --compose-file=docker-compose.yml STACK_NAME
 ```
 
