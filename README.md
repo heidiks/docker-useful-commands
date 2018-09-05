@@ -1,7 +1,11 @@
 # docker-useful-commands
 * [Cleaning](#cleaning)
 * [Push](#push)
-
+* [Swarm](#swarm)
+  * [Init](#init)
+  * [Join](#join)
+  * [Leave](#leave)
+  * [Stack deploy](#stack-deploy)
 ### Cleaning
 #### Delete all volumes
 ```
@@ -35,5 +39,28 @@ Tag and push
 ```
     $ docker tag app:latest PRIVATE_HOST/app:latest
     $ docker push PRIVATE_HOST/app:latest
+```
+
+### Swarm
+#### Init
+Initialize swarm mode
+```
+docker swarm init
+```
+
+#### Join
+Generete token for other nodes
+```
+docker swarm join-token [OPTIONS] (worker|manager)
+```
+
+#### Leave
+```
+docker swarm leave
+```
+
+#### Stack deploy
+```
+docker stack deploy --compose-file=docker-compose.yml STACK_NAME
 ```
 
